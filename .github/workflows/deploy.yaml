@@ -39,7 +39,7 @@ jobs:
         REGION: us-central1
 
       run: |
-        gcloud run deploy --source pythonapp\
+        gcloud run deploy pythonapp\
             --image $IMAGE_NAME:$GITHUB_SHA \ 
             --region us-central1 \
             --platform managed \
