@@ -31,6 +31,8 @@ jobs:
         docker push $IMAGE_NAME:$GITHUB_SHA
         docker push $IMAGE_NAME:latest
 
+
+
     - name: Deploy to Cloud Run
       env:
         SERVICE_NAME: python-appcloudrun
