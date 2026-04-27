@@ -35,7 +35,7 @@ jobs:
 
     - name: Deploy to Cloud Run
       env:
-        SERVICE_NAME: python-appcloudrun
+        SERVICE_NAME: kubernetes
         REGION: us-central1
       run: |
         gcloud run deploy $SERVICE_NAME \
