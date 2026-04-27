@@ -37,9 +37,9 @@ jobs:
       env:
         SERVICE_NAME: pythonapp
         REGION: us-central1
-        
+
       run: |
-        gcloud run deploy --source $SERVICE_NAME \
+        gcloud run deploy --source pythonapp\
             --image $IMAGE_NAME:$GITHUB_SHA \ 
             --region us-central1 \
             --platform managed \
